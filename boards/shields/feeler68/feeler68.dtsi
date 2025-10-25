@@ -17,12 +17,13 @@
         zmk,underglow = &led_strip;
     };
 
-backlight: pwmleds {
-    compatible = "pwm-leds";
-    pwm_led_1: pwm_led_1 {
-        pwms = <&pwm0 1 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
+    backlight: pwmleds {
+        compatible = "pwm-leds";
+        pwm_led_1: pwm_led_1 {
+            pwms = <&pwm0 1 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
+        };
     };
-};
+
 	center_encoder: encoder_center {
 		compatible = "alps,ec11";
 		label = "CENTER_ENCODER";
@@ -105,7 +106,14 @@ backlight: pwmleds {
     };
 };
 
+&uart0 {
+	status = "disabled";
+};
 
+zephyr_udc0: &usbd {
+    compatible = "nordic,nrf-usbd";
+    status = "okay";
+};
 
 &pinctrl {
     // Other Pinctrl definitions go here
