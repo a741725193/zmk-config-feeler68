@@ -1,6 +1,6 @@
 include:
   - board: eyelash_nano
-    shield: feeler68 
+    shield: feeler68 dongle_display_view_pro_micro
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
   - board: eyelash_nano

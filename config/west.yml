@@ -34,5 +34,8 @@ manifest:
     - name: zmk-tog-io
       remote: a741725193
       revision: main 
+    - name: zmk-dongle-display-view
+      remote: mctechnology17
+      revision: main
   self:
     path: config
