@@ -1,0 +1,13 @@
+file_format: "1"
+id: feeler68
+name: feeler68
+url: https://github.com/a741725193/zmk-config-feeler68
+type: shield
+requires:
+  - pro_micro
+exposes:
+features:
+  - keys
+  - underglow
+siblings:
+  - feeler68
